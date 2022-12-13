@@ -1,0 +1,5 @@
+#include "MultiplayerGetContainerRegistryCredentialsRequest.h"
+
+FMultiplayerGetContainerRegistryCredentialsRequest::FMultiplayerGetContainerRegistryCredentialsRequest() {
+}
+
