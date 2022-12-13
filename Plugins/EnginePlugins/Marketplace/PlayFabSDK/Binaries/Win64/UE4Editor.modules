@@ -1,0 +1,8 @@
+{
+	"BuildId": "14830424",
+	"Modules": 
+	{
+		"PlayFab": "UE4Editor-PlayFab.dll",
+		"PlayFabCommon": "UE4Editor-PlayFabCommon.dll"
+	}
+}
