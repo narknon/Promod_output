@@ -1,47 +1,34 @@
 {
-	"FileVersion": 3,
-	"Version": 0,
-	"VersionName": "1.33.200303",
-	"FriendlyName": "PlayFab Marketplace Plugin",
-	"Description": "PlayFab Marketplace plugin for Unreal Engine 4.24 Current API version: 1.33.200303",
-	"Category": "PlayFab",
-	"CreatedBy": "PlayFab and Phoenix Labs",
-	"CreatedByURL": "https://playfab.com/",
-	"DocsURL": "https://docs.microsoft.com/en-us/gaming/playfab/api-references/",
-	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/217fdf581b784571af03d3fb6580368f",
-	"SupportURL": "https://community.playfab.com/index.html",
-	"CanContainContent": false,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
-	"Installed": false,
-	"Modules": [
-		{
-			"Name": "PlayFab",
-			"Type": "Runtime",
-			"LoadingPhase": "PreDefault",
-			"WhitelistPlatforms": [
-				"Win64",
-				"Win32",
-				"Mac",
-				"IOS",
-				"Android",
-				"PS4",
-				"XboxOne"
-			]
-		},
-		{
-			"Name": "PlayFabCommon",
-			"Type": "Runtime",
-			"LoadingPhase": "PreDefault",
-			"WhitelistPlatforms": [
-				"Win64",
-				"Win32",
-				"Mac",
-				"IOS",
-				"Android",
-				"PS4",
-				"XboxOne"
-			]
-		}
-	]
+    "FileVersion": 3,
+    "FriendlyName": "PlayFab Marketplace Plugin",
+    "Version": 0,
+    "EngineVersion": "4.24.0",
+    "VersionName": "1.33.200303",
+    "CreatedBy": "PlayFab and Phoenix Labs",
+    "CreatedByURL": "https://playfab.com/",
+    "DocsURL": "https://docs.microsoft.com/en-us/gaming/playfab/api-references/",
+    "SupportURL": "https://community.playfab.com/index.html",
+    "Category": "PlayFab",
+    "Description": "PlayFab Marketplace plugin for Unreal Engine 4.24 Current API version: 1.33.200303",
+    "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/217fdf581b784571af03d3fb6580368f",
+    "Modules": [
+      {
+        "Name": "PlayFabCpp",
+        "Type": "Runtime",
+        "LoadingPhase": "PreDefault",
+        "WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "PS4", "XboxOne" ]
+      },
+      {
+        "Name": "PlayFab",
+        "Type": "Runtime",
+        "LoadingPhase": "PreDefault",
+        "WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "PS4", "XboxOne" ]
+      },
+      {
+        "Name": "PlayFabCommon",
+        "Type": "Runtime",
+        "LoadingPhase": "PreDefault",
+        "WhitelistPlatforms": [ "Win64", "Win32", "Mac", "IOS", "Android", "PS4", "XboxOne" ]
+      }
+    ]
 }

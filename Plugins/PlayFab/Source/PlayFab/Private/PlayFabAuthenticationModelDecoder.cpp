@@ -1,35 +1,56 @@
+//////////////////////////////////////////////////////
+// Copyright (C) Microsoft. 2018. All rights reserved.
+//////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Automatically generated cpp file for the play fab models
+//
+// API: Authentication
+//////////////////////////////////////////////////////////////////////////////////////////////
+
 #include "PlayFabAuthenticationModelDecoder.h"
+#include "PlayFabPrivate.h"
 
-class UPlayFabJsonObject;
+//////////////////////////////////////////////////////////////////////////
+// Generated PlayFab Authentication API Functions
+//////////////////////////////////////////////////////////////////////////
 
-FAuthenticationValidateEntityTokenResponse UPlayFabAuthenticationModelDecoder::decodeValidateEntityTokenResponseResponse(UPlayFabJsonObject* response) {
-    return FAuthenticationValidateEntityTokenResponse{};
+
+///////////////////////////////////////////////////////
+// API Keys
+//////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////
+// Authentication
+//////////////////////////////////////////////////////
+
+FAuthenticationGetEntityTokenResponse UPlayFabAuthenticationModelDecoder::decodeGetEntityTokenResponseResponse(UPlayFabJsonObject* response)
+{
+    // Temp ustruct
+    FAuthenticationGetEntityTokenResponse tempStruct;
+    UPlayFabJsonObject* dataObj = !(response->HasField("data")) ? nullptr : response->GetObjectField("data");
+
+    tempStruct.Entity = !(dataObj->HasField("Entity")) ? nullptr : dataObj->GetObjectField("Entity");
+    tempStruct.EntityToken = !(dataObj->HasField("EntityToken")) ? TEXT("") : dataObj->GetStringField("EntityToken");
+    tempStruct.TokenExpiration = !(dataObj->HasField("TokenExpiration")) ? TEXT("") : dataObj->GetStringField("TokenExpiration");
+
+    return tempStruct;
 }
 
-FAuthenticationGetEntityTokenResponse UPlayFabAuthenticationModelDecoder::decodeGetEntityTokenResponseResponse(UPlayFabJsonObject* response) {
-    return FAuthenticationGetEntityTokenResponse{};
+FAuthenticationValidateEntityTokenResponse UPlayFabAuthenticationModelDecoder::decodeValidateEntityTokenResponseResponse(UPlayFabJsonObject* response)
+{
+    // Temp ustruct
+    FAuthenticationValidateEntityTokenResponse tempStruct;
+    UPlayFabJsonObject* dataObj = !(response->HasField("data")) ? nullptr : response->GetObjectField("data");
+
+    tempStruct.Entity = !(dataObj->HasField("Entity")) ? nullptr : dataObj->GetObjectField("Entity");
+    GetEnumValueFromString<ELoginIdentityProvider>(TEXT("ELoginIdentityProvider"), dataObj->GetStringField("IdentityProvider"), tempStruct.IdentityProvider);
+    tempStruct.Lineage = !(dataObj->HasField("Lineage")) ? nullptr : dataObj->GetObjectField("Lineage");
+
+    return tempStruct;
 }
 
-FAuthenticationGetAPIKeysResponse UPlayFabAuthenticationModelDecoder::decodeGetAPIKeysResponseResponse(UPlayFabJsonObject* response) {
-    return FAuthenticationGetAPIKeysResponse{};
-}
-
-FAuthenticationDeleteAPIKeyResponse UPlayFabAuthenticationModelDecoder::decodeDeleteAPIKeyResponseResponse(UPlayFabJsonObject* response) {
-    return FAuthenticationDeleteAPIKeyResponse{};
-}
-
-FAuthenticationDeactivateAPIKeyResponse UPlayFabAuthenticationModelDecoder::decodeDeactivateAPIKeyResponseResponse(UPlayFabJsonObject* response) {
-    return FAuthenticationDeactivateAPIKeyResponse{};
-}
-
-FAuthenticationCreateAPIKeyResponse UPlayFabAuthenticationModelDecoder::decodeCreateAPIKeyResponseResponse(UPlayFabJsonObject* response) {
-    return FAuthenticationCreateAPIKeyResponse{};
-}
-
-FAuthenticationActivateAPIKeyResponse UPlayFabAuthenticationModelDecoder::decodeActivateAPIKeyResponseResponse(UPlayFabJsonObject* response) {
-    return FAuthenticationActivateAPIKeyResponse{};
-}
-
-UPlayFabAuthenticationModelDecoder::UPlayFabAuthenticationModelDecoder() {
-}
 

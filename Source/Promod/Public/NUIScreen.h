@@ -116,7 +116,7 @@ public:
     void BP_StartEnter(bool Forward);
     
     UFUNCTION(BlueprintImplementableEvent)
-    void BP_OnInput(FKey Key, TEnumAsByte<EInputEvent> EventType);
+    void BP_OnInput(FKey Key, EInputEvent EventType);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void BP_OnExited();

@@ -21,15 +21,6 @@
 			"LoadingPhase": "Default"
 		}
 	],
-	"PreBuildSteps":
-	{
-		"Linux": [
-			"\"$(PluginDir)/Source/PlayFabCommander/Build.bat\" \"$(PluginDir)\" $(TargetName) $(TargetType) $(TargetPlatform) $(TargetConfiguration)"
-		],
-		"Win64": [
-			"\"$(PluginDir)/Source/PlayFabCommander/Build.bat\" \"$(PluginDir)\" $(TargetName) $(TargetType) $(TargetPlatform) $(TargetConfiguration)"
-		]
-	},
 	"Plugins": [
 		{
 			"Name": "OnlineSubsystem",

@@ -12,6 +12,6 @@ private:
     int32 Counter;
     
 public:
-    UCustomIpNetDriver();
+    UCustomIpNetDriver(const FObjectInitializer& ObjectInitializer);
 };
 
