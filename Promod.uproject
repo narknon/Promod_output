@@ -62,10 +62,6 @@
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/ad08325742e24fb0836391bca25c72bb"
 		},
 		{
-			"Name": "GameLiftServerSDK",
-			"Enabled": true
-		},
-		{
 			"Name": "SlateInsights",
 			"Enabled": true
 		}
