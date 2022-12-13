@@ -20,14 +20,16 @@ Copyright (c) 2022 Audiokinetic Inc.
 =============================================================================*/
 #pragma once
 
+#include "AkAACFactory.h"
 #include "Platforms/AkUEPlatform.h"
 #include "Engine/EngineBaseTypes.h"
 #include "Engine/EngineTypes.h"
 #include "Engine/LatentActionManager.h"
 #include "HAL/ThreadSafeBool.h"
 #include "LatentActions.h"
-#include "AkAACFactory.h"
 #include "AkGameplayTypes.generated.h"
+
+#define AKCODECID_AAC   (10)
 
 UENUM(BlueprintType)
 enum class EAkAudioContext : uint8

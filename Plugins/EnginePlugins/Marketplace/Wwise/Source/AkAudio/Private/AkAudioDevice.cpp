@@ -3610,7 +3610,7 @@ AKRESULT FAkAudioDevice::SetImageSource(AAkSpotReflector* in_pSpotReflector, con
 {
 	if (m_bSoundEngineInitialized)
 	{
-		return AK::SpatialAudio::SetImageSource(in_pSpotReflector->GetImageSourceID(), in_ImageSourceInfo, in_AuxBusID, in_RoomID, in_AkComponent->GetAkGameObjectID());
+		return AK::SpatialAudio(in_pSpotReflector->GetImageSourceID(), in_ImageSourceInfo, in_AuxBusID, in_RoomID, in_AkComponent->GetAkGameObjectID());
 	}
 
 	return AK_Fail;

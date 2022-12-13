@@ -1108,7 +1108,7 @@ void UAkComponent::DebugDrawReflections() const
 	AkUInt32 uNumPaths = kMaxPaths;
 	AkVector listenerPos, emitterPos;
 	 
-	if (AK::SpatialAudio::QueryReflectionPaths(GetAkGameObjectID(), 0, listenerPos, emitterPos, paths, uNumPaths) == AK_Success && uNumPaths > 0)
+	if (AK::SpatialAudio::QueryDiffractionPaths(GetAkGameObjectID(), 0, listenerPos, emitterPos, paths, uNumPaths)== AK_Success && uNumPaths > 0)
 		_DebugDrawReflections(emitterPos, listenerPos, paths, uNumPaths);
 }
 
@@ -1120,7 +1120,7 @@ void UAkComponent::DebugDrawDiffraction() const
 
 	AkVector listenerPos, emitterPos;
 
-	if (AK::SpatialAudio::QueryDiffractionPaths(GetAkGameObjectID(), 0, listenerPos, emitterPos, paths, uNumPaths) == AK_Success)
+	if (AK::SpatialAudio::QueryDiffractionPaths(GetAkGameObjectID(), 0, listenerPos, & emitterPos, paths, uNumPaths) == AK_Success)
 	{
 		if (uNumPaths > 0)
 			_DebugDrawDiffraction(emitterPos, listenerPos, paths, uNumPaths);
