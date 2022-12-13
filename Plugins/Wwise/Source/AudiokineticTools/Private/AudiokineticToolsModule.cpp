@@ -432,10 +432,10 @@ class FAudiokineticToolsModule : public IAudiokineticTools
 		{
 			if (!AkSettingsPerUser->SuppressWwiseProjectPathWarnings && FApp::CanEverRender())
 			{
-				if (EAppReturnType::Yes == FMessageDialog::Open(EAppMsgType::YesNo, LOCTEXT("SettingsNotSet", "Wwise settings do not seem to be set. Would you like to open the settings window to set them?")))
+				/*if (EAppReturnType::Yes == FMessageDialog::Open(EAppMsgType::YesNo, LOCTEXT("SettingsNotSet", "Wwise settings do not seem to be set. Would you like to open the settings window to set them?")))
 				{
 					FModuleManager::LoadModuleChecked<ISettingsModule>("Settings").ShowViewer(FName("Project"), FName("Wwise"), FName("User Settings"));
-				}
+				}*/
 			}
 			else
 			{

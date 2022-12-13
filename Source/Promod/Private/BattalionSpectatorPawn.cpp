@@ -86,7 +86,7 @@ ABattalionSpectatorPawn::ABattalionSpectatorPawn() {
     this->GrenadeLineGreen = NULL;
     this->GrenadeLineYellow = NULL;
     this->CurrentDOMZone = NULL;
-    this->Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("CollisionComponent0"));
+    /*this->Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("CollisionComponent0"));*/
     this->CamPathFocusActor = NULL;
     this->CamPathSpline = NULL;
     this->CamPathCurrentTime = 0.00f;
