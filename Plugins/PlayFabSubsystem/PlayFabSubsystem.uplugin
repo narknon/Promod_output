@@ -1,0 +1,47 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "PlayFab Subsystem",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "Bulkhead Interactive Ltd.",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "PlayFabSubsystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"PreBuildSteps":
+	{
+		"Linux": [
+			"\"$(PluginDir)/Source/PlayFabCommander/Build.bat\" \"$(PluginDir)\" $(TargetName) $(TargetType) $(TargetPlatform) $(TargetConfiguration)"
+		],
+		"Win64": [
+			"\"$(PluginDir)/Source/PlayFabCommander/Build.bat\" \"$(PluginDir)\" $(TargetName) $(TargetType) $(TargetPlatform) $(TargetConfiguration)"
+		]
+	},
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "PlayFab",
+			"Enabled": true
+		}
+	]
+}

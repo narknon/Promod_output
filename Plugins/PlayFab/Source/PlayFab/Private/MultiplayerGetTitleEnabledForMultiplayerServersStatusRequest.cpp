@@ -1,0 +1,5 @@
+#include "MultiplayerGetTitleEnabledForMultiplayerServersStatusRequest.h"
+
+FMultiplayerGetTitleEnabledForMultiplayerServersStatusRequest::FMultiplayerGetTitleEnabledForMultiplayerServersStatusRequest() {
+}
+
